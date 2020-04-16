@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chats.GroupChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/group_chat_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/group_chat_toolbar"
+            layout="@layout/app_bar_layout"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/group_chat_list"
+                android:layout_below="@+id/group_chat_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/group_chat_buttons_layout"
+                android:layout_height="match_parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/group_chat_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/group_input_message"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Write your message here..."
+            android:padding="17dp"
+            />
+
+        <ImageButton
+            android:id="@+id/group_send_message_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message_icon"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

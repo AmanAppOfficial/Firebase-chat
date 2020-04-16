@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "393993031013",
+    "firebase_url": "https://oodlesdemochat.firebaseio.com",
+    "project_id": "oodlesdemochat",
+    "storage_bucket": "oodlesdemochat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393993031013:android:3c817dfc413c7c6aab258c",
+        "android_client_info": {
+          "package_name": "e.aman.firebaseoodlesdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393993031013-o2ietb20hcpptiokr2oguo4trtgu2f5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "e.aman.firebaseoodlesdemo",
+            "certificate_hash": "189cd3a92ff30c29de7b291f268f7566b2ad7f8d"
+          }
+        },
+        {
+          "client_id": "393993031013-rd2gdq13jp99kdg5ogkl6urt79chsrog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJQQKy-no9ZUvy4aR9l8CclOjZrzRQoPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393993031013-rd2gdq13jp99kdg5ogkl6urt79chsrog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

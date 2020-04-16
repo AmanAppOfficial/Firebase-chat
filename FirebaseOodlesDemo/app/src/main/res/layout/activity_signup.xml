@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".auth.SignupActivity">
+
+
+
+    <ImageView
+        android:id="@+id/oodles_signup_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/oodles_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_username_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/oodles_signup_logo"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signup_username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:hint="Username"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_password_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/signup_username_layout"
+        android:layout_margin="20dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signup_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:hint="Password"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reenter_password_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/signup_password_layout"
+        android:layout_margin="20dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/reenter_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:hint="Re-enter Password"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reenter_password_layout"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:background="@drawable/round_button_background"
+        android:textColor="@android:color/white"
+        android:layout_margin="30dp"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@android:color/holo_blue_light"/>
+    />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/admin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="I'm admin"
+        android:textColor="#2F83C5"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/oodles_login_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/oodles_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_username_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/oodles_login_logo"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/login_username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:hint="Username"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/login_username_layout"
+        android:layout_margin="20dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/login_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:hint="Password"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_layout"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:background="@drawable/round_button_background"
+        android:textColor="@android:color/white"
+        android:layout_margin="30dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/login_button">
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ?"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textview1"
+            android:text=" Sign up!"
+            android:textColor="#2F83C5"
+            />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@android:color/holo_blue_light"/>
+        />
+
+
+    <TextView
+        android:id="@+id/forgot_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_layout"
+        android:text="Forgot password?"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:textColor="#2F83C5"
+        />
+
+
+</RelativeLayout>

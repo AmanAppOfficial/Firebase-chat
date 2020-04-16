@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    >
+
+
+    <LinearLayout
+        android:padding="6dp"
+        android:id="@+id/personal_left_view"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/chat_background_round"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_friend_profile"
+                android:layout_width="30dp"
+                android:src="@drawable/profile_icon"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/personal_receiver_message_textview"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                android:text="Receiver messages here...."
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="-1.5dp"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="start"
+            android:background="@drawable/corner"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/personal_right_view"
+        android:padding="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/sender_chat_background_round"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/personal_sender_message_textview"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="6dp"
+                android:text="Sender messages here...."
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="-1.5dp"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="start"
+            android:background="@drawable/sender_corner"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

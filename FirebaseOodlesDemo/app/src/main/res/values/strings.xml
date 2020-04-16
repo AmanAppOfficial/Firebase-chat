@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirebaseOodlesDemo</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Chats_fragment">Chats Fragment</string>
+    <string name="Contacts_fragment">Contacts Fragment</string>
+    <string name="Groups_fragment">Groups Fragment</string>
+</resources>
+
